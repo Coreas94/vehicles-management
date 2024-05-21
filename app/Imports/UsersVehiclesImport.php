@@ -34,7 +34,6 @@ class UsersVehiclesImport implements ToCollection
 
             // Validar los datos antes de insertarlos
             if (count($rowData) < 8) {
-                Log::warning('Fila incompleta: ' . implode(', ', $rowData));
                 continue; // Omito fila incompleta
             }
 

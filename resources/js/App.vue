@@ -14,16 +14,16 @@
                   <li>&nbsp;</li>
                   <li>&nbsp;</li>
                   <li class="nav-item">
-                     <router-link class="nav-link" to="/">Vehicles</router-link>
+                     <router-link class="nav-link" to="/"><b>Vehiculos</b></router-link>
                   </li>
                   <li class="nav-item">
-                     <router-link class="nav-link" to="/users">Users</router-link>
+                     <router-link class="nav-link" to="/users"><b>Usuarios</b></router-link>
                   </li>
                   <li class="nav-item">
-                     <router-link class="nav-link" to="/import-excel">Importar Excel</router-link>
+                     <router-link class="nav-link" to="/import-excel"><b>Importar Excel</b></router-link>
                   </li>
                   <li class="nav-item">
-                     <router-link class="nav-link" to="/vehicle-histories">Historial de vehiculos</router-link>
+                     <router-link class="nav-link" to="/vehicle-histories"><b>Historial de vehiculos</b></router-link>
                   </li>
                </ul>
             </div>

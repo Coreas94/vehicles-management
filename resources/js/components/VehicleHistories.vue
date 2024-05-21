@@ -2,7 +2,7 @@
    <div class="container mt-5">
       <h1 class="mb-4">Historial de vehiculos</h1>
       <div v-if="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
-      <div v-if="histories.length === 0" class="alert alert-info">No hay registros historios de vehiculos.</div>
+      <div v-if="histories.length === 0" class="alert alert-info">No hay registros historicos de vehiculos.</div>
       <table class="table">
          <thead>
             <tr>

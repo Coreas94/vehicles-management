@@ -40,6 +40,14 @@ class VehicleController extends Controller
             'user_id' => 'required|exists:users,id'
         ]);
 
+        //Verifico que no exista el vehiculo basado en la patente
+        $existingVehicle = Vehicle::where('license_plate', $request->license_plate)->first();
+
+        if ($existingVehicle) {
+            return response()->json(['error' => 'Ya existe un vehiculo con esta patente'], 400);
+        }
+
+
         $vehicle = Vehicle::create($request->all());
 
         VehicleOwnershipHistory::create([

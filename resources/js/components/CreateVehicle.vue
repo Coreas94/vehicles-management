@@ -77,10 +77,11 @@ export default {
                router.push({ name: 'Vehicles' });
             }, 3000);
          } catch (error) {
-            if(error.response.data.error){
-               errorMessage.value = error.response.data.error;
+            if(error.response.data.errors.license_plate){
+               errorMessage.value = 'Ya existe un vehiculo registrado con la misma patente! Intente de nuevo.';
+            }else{
+               errorMessage.value = 'Error creando vehículo. Por favor, intente de nuevo.';
             }
-            console.error('Error creando vehicle:', error);
          }
       };
 

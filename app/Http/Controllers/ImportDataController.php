@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Imports\UsersVehiclesImport;
-use App\Jobs\ImportDataJob;
 use App\Mail\ResponseMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
