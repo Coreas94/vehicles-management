@@ -56,9 +56,13 @@ Esta aplicación permite gestionar la información de vehículos y propietarios,
    ```bash
    php artisan serve
 
-3. Para compilar los activos front-end:
+2. Para compilar los activos front-end:
    ```bash
    npm run dev
+
+3. Ir al navegador y acceder a:
+   ```bash
+   http://localhost:8000/
 
 ## Pruebas
 
