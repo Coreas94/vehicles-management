@@ -7,6 +7,8 @@
          <thead>
             <tr>
                <th>Vehiculo</th>
+               <th>Año</th>
+               <th>Patente</th>
                <th>Propietario</th>
                <th>Fecha de creación</th>
                <th>Fecha de eliminación</th>
@@ -15,6 +17,8 @@
          <tbody>
             <tr v-for="history in histories" :key="history.id">
                <td>{{ history.vehicle.brand }} {{ history.vehicle.model }}</td>
+               <td>{{ history.vehicle.year }}</td>
+               <td>{{ history.vehicle.license_plate }}</td>
                <td>{{ history.user.name }} {{ history.user.surname }}</td>
                <td>{{ formatDate(history.created_at) }}</td>
                <td v-if="history.vehicle.deleted_at">{{ formatDate(history.vehicle.deleted_at) }}</td>
